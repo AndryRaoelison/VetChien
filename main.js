@@ -14,7 +14,7 @@ navLinks.addEventListener("click", () => {
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
-//animation apparation effect
+//animation apparition effect
 function revealAuto(content, delay) {
   const scrollRevealOption = {
     distance: "50px",
@@ -32,20 +32,20 @@ const scrollRevealLists = [
   ".header__content h2",
   ".header__btn",
   ".header__content p",
+  ".intro__card",
 ];
-let delay = 500;
+const delay = 500;
 scrollRevealLists.forEach((revealList) => {
   revealAuto(revealList, delay);
   delay += 250;
 });
 
-//factorisation up there ;)
+//factorisation of the bellow code up there ;)
 // const scrollRevealOption = {
 //   distance: "50px",
 //   origin: "bottom",
 //   duration: 1000,
 // };
-
 // ScrollReveal().reveal(".header__content h4 ", {
 //   ...scrollRevealOption,
 // });

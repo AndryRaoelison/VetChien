@@ -1,25 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>VetChien | Vétérinaire Mada</title>
+    <script src="main.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script></script>
   </head>
+
   <body>
-    <section class="section__container intro__container">
-      <p class="section__subheader">Intro</p>
-      <h2 class="section__header">A propos de nous</h2>
-      <div class="intro__grid">
-        <div class="intro__card">
-          <div class="intro__image">
-            <img src="assets/intro-1.png" alt="intro" />
-          </div>
-          <h4>Expert en chien</h4>
-          <p>
-            Rencontrer notre equipe dédiée pour le bien être de vos compagnons
-          </p>
+    <div hidden>Hello from Madagasikara 😊</div>
+    <nav>
+      <div class="nav">
+        <div class="nav__logo">
+          <a href="#">VetChien</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
         </div>
       </div>
-    </section>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#store">Boutique</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header id="home">
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h4>Bienvenue</h4>
+          <h1>Vetchien <span>Vétérinaire</span></h1>
+          <h2>Nous prendrons soin de votre chien comme vous</h2>
+          <p>Du traitement quotidien au soin approffondi</p>
+          <div class="header__btn">
+            <button>
+              Commencer ici <span><i class="ri-arrow-right-line"></i></span>
+            </button>
+          </div>
+        </div>
+        <div class="header__image">
+          <img
+            src="assets/header-bg.png"
+            alt="header-bg"
+            class="header__image-bg"
+          />
+          <img src="assets/header.png" alt="header" class="header__image-dog" />
+        </div>
+      </div>
+      <div class="header__bottom"></div>
+    </header>
   </body>
 </html>

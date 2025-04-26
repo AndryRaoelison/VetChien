@@ -42,7 +42,7 @@ for (let i = 0; i < scrollRevealLists.length; i++) {
   delay += 50; // Incrémente le délai pour chaque élément
 }
 
-//factorisation of the bellow code up there ;)
+//factorisation of the code bellow  up there ;)
 // const scrollRevealOption = {
 //   distance: "50px",
 //   origin: "bottom",

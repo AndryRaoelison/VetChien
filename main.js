@@ -14,7 +14,7 @@ navLinks.addEventListener("click", () => {
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
-//animation apparition effect
+//Animation apparition effect
 function revealAuto(content, delay) {
   const scrollRevealOption = {
     distance: "50px",
@@ -36,21 +36,11 @@ let scrollRevealLists = [
   ".about__image img",
   ".service__card",
 ];
-let delay = 500; // Définition de la variable delay avant la boucle
+let delay = 500; //Making an animation of reaveal with a delay + 50 ms for each elements of scrollRevealLists
 for (let i = 0; i < scrollRevealLists.length; i++) {
   revealAuto(scrollRevealLists[i], delay);
-  delay += 50; // Incrémente le délai pour chaque élément
+  delay += 50;
 }
-
-//factorisation of the code bellow  up there ;)
-// const scrollRevealOption = {
-//   distance: "50px",
-//   origin: "bottom",
-//   duration: 1000,
-// };
-// ScrollReveal().reveal(".header__content h4 ", {
-//   ...scrollRevealOption,
-// });
 
 const swiper = new Swiper(".swiper", {
   loop: true,

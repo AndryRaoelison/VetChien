@@ -34,6 +34,7 @@ let scrollRevealLists = [
   ".header__content p",
   ".intro__card",
   ".about__image img",
+  ".service__card",
 ];
 let delay = 500; // Définition de la variable delay avant la boucle
 for (let i = 0; i < scrollRevealLists.length; i++) {
@@ -50,3 +51,25 @@ for (let i = 0; i < scrollRevealLists.length; i++) {
 // ScrollReveal().reveal(".header__content h4 ", {
 //   ...scrollRevealOption,
 // });
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 2000,
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+  },
+});

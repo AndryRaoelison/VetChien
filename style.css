@@ -329,7 +329,7 @@ p {
 .product__grid {
   display: grid;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 0 0.7rem;
 }
 .product__grid h4 {
   font-size: 2rem;
@@ -380,6 +380,69 @@ p {
 .service__card p {
   color: var(--text-light);
   font-size: 1rem;
+}
+
+/* ---------- section client styling ---------- */
+.client {
+  background-color: var(--primary-color);
+}
+.swiper {
+  margin-top: 3rem;
+  width: 100%;
+}
+.client__container {
+  overflow: hidden;
+}
+.swiper-slide {
+  min-width: 300px;
+}
+.client__card {
+  background-color: var(--white);
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.client__detail {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.client__detail img {
+  max-width: 60px;
+  border-radius: 100%;
+}
+.client__detail h4 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.client__detail h5 {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.client__card p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  margin-top: 1rem;
+}
+/* photos styling instagram */
+
+.instagram__container P {
+  color: var(--text-dark);
+  width: fit-content;
+  padding: 0.2rem 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+}
+.instagram__container h3 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.instagram__grid {
+  display: grid;
 }
 @media (width>540px) {
   /* header styling */
@@ -434,6 +497,10 @@ p {
   }
   .product__grid div img {
     border-radius: 5px;
+  }
+  /* section instagram styling */
+  .instagram__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -491,5 +558,9 @@ p {
     grid-template-columns: repeat(3, 1fr);
     margin-inline: unset;
     width: unset;
+  }
+  /* section instagram styling */
+  .instagram__grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

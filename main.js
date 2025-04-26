@@ -26,19 +26,21 @@ function revealAuto(content, delay) {
     delay: delay,
   });
 }
-const scrollRevealLists = [
+let scrollRevealLists = [
   ".header__content h4 ",
   ".header__content h1",
   ".header__content h2",
   ".header__btn",
   ".header__content p",
   ".intro__card",
+  ".about__image img",
+  ".service__card",
 ];
-const delay = 500;
-scrollRevealLists.forEach((revealList) => {
-  revealAuto(revealList, delay);
-  delay += 250;
-});
+let delay = 500; // Définition de la variable delay avant la boucle
+for (let i = 0; i < scrollRevealLists.length; i++) {
+  revealAuto(scrollRevealLists[i], delay);
+  delay += 50; // Incrémente le délai pour chaque élément
+}
 
 //factorisation of the bellow code up there ;)
 // const scrollRevealOption = {
@@ -49,3 +51,25 @@ scrollRevealLists.forEach((revealList) => {
 // ScrollReveal().reveal(".header__content h4 ", {
 //   ...scrollRevealOption,
 // });
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 2000,
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+  },
+});
